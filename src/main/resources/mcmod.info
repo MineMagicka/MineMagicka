@@ -1,0 +1,16 @@
+[
+{
+  "modid": "minemagicka",
+  "name": "MineMagicka",
+  "description": "todo",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["WireSegal", "jaredlll08", "AKTheKnight", "SkullyGamingMC"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
