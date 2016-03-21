@@ -1,5 +1,6 @@
 package minemagicka.common
 
+import minemagicka.common.core.CommonProxy
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.common.SidedProxy
 import net.minecraftforge.fml.common.event.FMLInitializationEvent
@@ -12,23 +13,23 @@ class MineMagicka {
         @Mod.Instance("minemagicka")
         lateinit var instance: MineMagicka
 
-//        @SidedProxy(serverSide = "",
-//                clientSide = "")
-//        lateinit var proxy: CommonProxy
+        @SidedProxy(serverSide = "minemagicka.common.core.CommonProxy",
+                clientSide = "minemagicka.client.core.ClientProxy")
+        lateinit var proxy: CommonProxy
     }
 
     @Mod.EventHandler
     fun preInit(event: FMLPreInitializationEvent) {
-//        proxy.pre(event)
+        proxy.pre(event)
     }
 
     @Mod.EventHandler
     fun init(event: FMLInitializationEvent) {
-//        proxy.init(event)
+        proxy.init(event)
     }
 
     @Mod.EventHandler
     fun post(event: FMLPostInitializationEvent) {
-//        proxy.post(event)
+        proxy.post(event)
     }
 }
